@@ -1,4 +1,4 @@
-
+"use strict";
 
 Function.prototype.curry = function(one: number) {
     let origFunc = this;
