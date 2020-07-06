@@ -3,6 +3,7 @@ import './public/index.scss';
 import curry from './src/curry';
 import prototype from './src/prototype';
 import axios from './src/axios';
+import storage from './src/storage';
 
 "use strict";
 
@@ -29,6 +30,12 @@ if(axiosid) {
     });
 }
 
+const storageid : HTMLElement | null = document.getElementById('storageid');
+if(storageid) {
+    storageid.addEventListener('click', () => {
+        storage();
+    });
+}
 
 
 
